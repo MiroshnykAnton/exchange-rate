@@ -1,0 +1,33 @@
+*{
+  background-color: #301f3e;
+  color: white;
+}
+
+.main-container {
+    padding: 5% 10%;
+}
+
+.header-container {
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #ffbf00;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.content-container {
+  background-color: #301f3e;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.content-container > span{
+  margin-left: 20%;
+  background-color: #301f3e;
+}

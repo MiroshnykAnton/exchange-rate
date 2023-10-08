@@ -1,0 +1,50 @@
+<app-header [usdValue]="usdGbp" [eurValue]="eurGbp"></app-header>
+
+<main>
+  <form [formGroup]="form" (submit)="onConvert()">
+
+    <div class="main-container">
+      <div class="selection-container">
+        <mat-form-field>
+          <input type="number" matInput formControlName="amount" placeholder="Enter a value">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Select the entered currency:</mat-label>
+          <br>
+          <mat-select formControlName="currency1">
+            <mat-option value="USD">USD</mat-option>
+            <mat-option value="EUR">EUR</mat-option>
+            <mat-option value="GBP">GBP</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <mat-label>Select the currency you want to receive:</mat-label>
+          <br>
+          <mat-select formControlName="currency2">
+            <mat-option value="USD">USD</mat-option>
+            <mat-option value="EUR">EUR</mat-option>
+            <mat-option value="GBP">GBP</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <br><br>
+        <button type="submit" class="btn btn-default" mat-button [disabled]="form.invalid">Convert</button>
+
+      </div>
+    </div>
+
+    <div class="result-container">
+      <div class="result-content">
+        <h2>Result:</h2>
+        <p>{{ result }}</p>
+
+      </div>
+    </div>
+
+  </form>
+
+
+
+</main>

@@ -1,0 +1,82 @@
+*{
+  background-color: #301f3e;
+  color: white;
+}
+
+main {
+  padding: 5% 10%;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #ffbf00;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.main-container {
+  padding: 20px 0px 20px 0px;
+  border-radius: 15px;
+  background-color: #301f3e;
+  color: #fdce4b;
+}
+
+.selection-container {
+  width: 200px;
+  margin-left: 20%;
+  background-color: #301f3e;
+}
+
+.result-container{
+  padding: 20px 0px 20px 0px;
+  border-radius: 15px;
+  background-color: #301f3e;
+}
+
+.result-content {
+  width: 200px;
+  margin-left: 20%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #301f3e;
+}
+
+/* BASIC STYLES */
+
+input {
+  display:block;
+  padding:1px;
+  /* background-color: #7b26b0; */
+}
+
+input.ng-touched.ng-invalid {
+  border: solid red 2px;
+}
+
+input.ng-touched.ng-valid {
+  border: solid green 2px;
+}
+
+.btn:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  transition: 0.7s;
+}
+
+.btn:active {
+  background-color: #ffbf00;
+}
+
+.btn-default {
+  cursor: pointer;
+  box-shadow: 0 0 0 1px white;
+}
+
+.select {
+  width: 100%;
+  padding:10px;
+  border-radius:10px;
+  color: white;
+}
