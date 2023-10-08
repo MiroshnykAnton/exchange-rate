@@ -12,6 +12,7 @@ export class DataService {
 
   getCurrencyData(currency: string = 'USD'): any {
     // mock response
+    
     // return of({
     //   base: 'USD',
     //   timestamp: 1692914400,
